@@ -32,6 +32,7 @@ async function main() {
   console.log("Deploying contract, Please wait ...");
   const contract = await contractFactory.deploy(); //code stops here and waits for contract to deploy due to await keyword, it resolves a promise
   await contract.deployTransaction.wait(1);
+  console.log(`Contract address: ${contract.address}`) //To display the contract address
 
   // const transactionReceipt = await contract.deployTransaction.wait(1); //setting the number of blockconfirmations we want
   // console.log("Here is the deployment transaction:");

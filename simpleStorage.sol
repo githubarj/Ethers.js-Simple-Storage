@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 
 //always start with declearing the compiler vesrion
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.7;
 
 //declare a contract
 contract SimpleStorage {
